@@ -6,8 +6,8 @@ window.onload = function () {
 
 window.onresize = function () {
 	var otroAncho = window.innerWidth;
-	//cambiar al subir al servidor la rutas
-	var menuImg = "file:///F:/SeguridadRK/images/menu.svg";
+	
+	var menuImg = "https://rutilaxd.github.io/rutilaxd.seguridadrk.io//images/menu.svg";
 	var ico = document.getElementById('icon');
 	var header = document.getElementsByClassName('header')[0];
 	var menu = document.getElementsByClassName('menu')[0];
@@ -28,8 +28,8 @@ function cambia() {
 	var menu = document.getElementsByClassName('menu')[0];
 
 	var actual = ico.src;
-	var menuImg = "file:///F:/SeguridadRK/images/menu.svg";
-	var closeImg = "file:///F:/SeguridadRK/images/close.png";
+	var menuImg = "https://rutilaxd.github.io/rutilaxd.seguridadrk.io/images/menu.svg";
+	var closeImg = "https://rutilaxd.github.io/rutilaxd.seguridadrk.io/images/close.png";
 
 	if (actual === menuImg) {
 		header.style.paddingBottom = "1em";
