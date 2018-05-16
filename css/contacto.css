@@ -90,4 +90,13 @@ label {
 		margin: 20% 0 0 20%;
 		width: 60%
 	}
+	
+	form h2{
+		font-size: smaller;
+		margin-top: 4%;
+	}
+	
+	form label {
+		font-size: medium;
+	}
 }
