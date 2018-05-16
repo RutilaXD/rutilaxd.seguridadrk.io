@@ -91,12 +91,12 @@ label {
 		width: 60%
 	}
 	
-	form h2{
+	.form h2{
 		font-size: smaller;
 		margin-top: 4%;
 	}
 	
-	form label {
+	.form label {
 		font-size: medium;
 	}
 }
