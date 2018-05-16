@@ -32,22 +32,23 @@
 			</div>
 			<div class="form">
 				<h2>Envíenos sus datos y un representante de Servicios y Seguridad Privada RK se pondrá en contacto con usted a la brevedad</h2>
+				<br><h5>Los campos marcados con asterisco (*) son obligatorios</h5>
 				<form action="../index.html" method="post">
-				<label>Nombre</label><br/><input type="text" placeholder="Ej. Mayra Lopez"><br/>
-				<label>Empresa</label><br/><input type="text"><br/>
-				<label>Telefono</label><br/><input type="text" placeholder="Ej. 55 5657 5859" maxlength="12"><br/>
-				<label>Correo</label><br/><input type="email" placeholder="Ej. alguien@ejemplo.com"><br/>
-				<label>Servicio</label><br/>
-				<select>
-					<option>Selecciona una opcion...</option>
-					<option>Guardia Industrial</option>
-					<option>Guardia Intramuros</option>
-					<option>Escolta</option>
-					<option>Limpieza</option>
-					<option>Mantenimiento</option>
-				</select><br/>
-				<label>Comentarios</label><br/><textarea placeholder="Escribe algo..."></textarea><br/>
-				<input type="submit" value="Enviar">
+					<label>Nombre*</label><br/><input type="text" placeholder="Ej. Mayra Lopez" required><br/>
+					<label>Empresa*</label><br/><input type="text" required><br/>
+					<label>Telefono</label><br/><input type="text" placeholder="Ej. 55 5657 5859" maxlength="12"><br/>
+					<label>Correo*</label><br/><input type="email" placeholder="Ej. alguien@ejemplo.com" required><br/>
+					<label>Servicio*</label><br/>
+					<select required>
+						<option>Selecciona una opcion...</option>
+						<option>Guardia Industrial</option>
+						<option>Guardia Intramuros</option>
+						<option>Escolta</option>
+						<option>Limpieza</option>
+						<option>Mantenimiento</option>
+					</select><br/>
+					<label>Comentarios*</label><br/><textarea placeholder="Escribe algo..." required></textarea><br/>
+					<input type="submit" value="Enviar">
 				</form>
 			</div>
 			<div class="footer">
