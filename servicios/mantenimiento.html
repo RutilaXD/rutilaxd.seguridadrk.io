@@ -3,34 +3,59 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Servicios y Seguridad Privada RK S.A. de C.V. | Seguridad</title>
+		<title>Servicios y Seguridad Privada RK S.A. de C.V.| Mantenimiento</title>
 		<link href="https://fonts.googleapis.com/css?family=Muli:200,400" rel="stylesheet">
 		<link rel="icon" href="../images/rk.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../css/menu.css" media="screen"/>
 		<link rel="stylesheet" href="../css/security.css" media="screen"/>
 		<link rel="stylesheet" href="../css/footer.css" media="screen"/>
 		<script>document.oncontextmenu = function() { return false;}</script>
-		<style type="text/css">
+		<style>
+			.services {
+				height: 1400px;
+			}
+
+			.grid {
+				margin: 7% 0 0 10%;
+			}
+
 			@media (max-width: 850px){
 				.text {
 					width: 100%;
-					background-image: url('../images/intramuros.jpg');
+					background-image: url('../images/techo.jpg');
 					background-size: cover;
 				}
 
+				.services {
+					height: 2400px;
+				}
+
 				.text-description{
-					background-color: #262427;
+					background-color: #1d4b4f;
 					opacity: 0.8;
+					height: 65%;
+				}
+				
+				.grid {
+					display: table;
+					margin: auto;
 				}
 
-				.bigtitle {
-					color: #262427;
+				.serv {
+					margin-bottom: 2.5%;
 				}
 
-				.service img {
-				    height: 100px;
-				}				
-			}				
+				.serv img {
+					width: 67%;
+					height: 320px;
+				}		
+			}
+
+			@media (max-width: 400px){
+				.services {
+					height: 2235px;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -38,7 +63,7 @@
 			<div class="header">
 				<div class="logo">
 					<div class="ico"></div>
-					<p class="name">Servicios y Seguridad Privada RK S.A. de C.V.</p>
+					<p class="name">Servicios y Seguridad Privada S.A. de C.V.</p>
 				</div>
 				<div class="icon-menu"><img id="icon" src="../images/menu.svg"></div>
                 <script type="text/javascript" src="../js/menu.js"></script>
@@ -51,26 +76,49 @@
 				</div>
 			</div>
 			<div class="description">
-				<div class="text">
-					<h1 class="bigtitle">Seguridad</h1>
+				<div class="text" style="background-color: #1d4b4f;">
+					<h1 class="bigtitle">Mantenimiento</h1>
 					<p class="text-description">
-					 En Servicios y Seguridad privada RK estamos conscientes de la creciente demanda de guardias de seguridad  que den la confianza y la certeza de que la integridad personal se conserve ante situaciones adversas.<br/><br/> Es por eso que nosotros ponemos a su disposición a nuestros guardias que están en capacitación constante por personal certificado por la Secretaría de Trabajo y Previsión Social
+					 En Servicios y Seguridad privada RK velamos por la integridad de sus instalaciones, puesto que estamos conscientes de que es fundamental para el buen funcionamiento de su negocio.<br><br>Queremos apoyar a nuestros clientes a brindar un servicio de calidad y a cubrir sus necesidades integralmente, incorporando nuestros cuerpos de seguridad, personal de limpieza y mantenimiento.<br><br><b><a href="contacto.html">Pregunte por nuestros paquetes de servicios</a></b>
 					</p>
 				</div>
 				<div class="img-description">
-					<img src="../images/guardias.png">
+					<img src="../images/techo.jpg">
 				</div>
 			</div>
 			<div class="services">
+				<h2 class="title-services">Evidencias: </h2>
+				<div class="grid">
+					<div class="serv">
+						<img src="../images/mante1.jpg">
+					</div>
+					<div class="serv">
+						<img src="../images/mante2.jpg">
+					</div>
+					<div class="serv">
+						<img src="../images/mante3.jpg">
+					</div>										
+				</div>
+				<div class="grid">
+					<div class="serv">
+						<img src="../images/mante4.jpg">
+					</div>
+					<div class="serv">
+						<img src="../images/mante5.jpg">
+					</div>
+					<div class="serv">
+						<img src="../images/mante6.jpg">
+					</div>
+				</div>					
 				<h2 class="title-services">Brindamos servicios a: </h2>
 				<div class="gridd">
 					<div class="place">
 						<img src="../images/residencia.png">
-						<label>Residencias</label>
+						<label>Condominios</label>
 					</div>
 					<div class="place">
-						<img src="../images/bodega.png">
-						<label>Bodegas</label>
+						<img src="../images/hospital.png">
+						<label>Hospitales</label>
 					</div>
 					<div class="place">
 						<img src="../images/empresa.png">
@@ -78,42 +126,17 @@
 					</div>
 					<div class="place">
 						<img src="../images/comercio.jpg">
-						<label>Comercios</label>
+						<label>Comercios y Plazas</label>
 					</div>
 					<div class="place">
 						<img src="../images/escuela.png">
 						<label>Escuelas</label>
 					</div>
 					<div class="place">
-						<img src="../images/evento.png">
-						<label>Eventos<label>
+						<img src="../images/obra.png">
+						<label>Obras<label>
 					</div>					
-				</div>
-				<h2 class="title-services">Con nuestro cuerpo de: </h2>
-				<div class="grid">
-					<div class="service">
-						<img src="../images/guardia.jpg">
-						<label>Guardias industriales</label>
-					</div>
-					<div class="service">
-						<img src="../images/escolta.jpg">
-						<label>Escoltas</label>
-					</div>
-					<div class="service">
-						<img src="../images/intramuros.jpg">
-						<label>Guardias intramuros</label>
-					</div>
-				</div>				
-			</div>
-			<div class="description" id="agre">
-				<div class="agregado">
-					<h1>Al contratar cualquiera de nuestros servicios, contratará además:</h1>
-					<p>
-					 Respaldo de nuestro centro de atención y operación disponible las 24 hrs para brindar apopyo en caso de emergencia así como de nuestro equipo de reacción.
-					 <br/><br/>Comunicación constante con el centro de información y operación y el guardia durante todo el día para reportar el estado de seguridad de sus instalaciones.
-					 <br><br/>Apoyo para reportar y dar seguimiento ante las autoridades competentes: SSP, Protección Civil, Bomberos, Cruz Roja, etc.
-					</p>
-				</div>
+				</div>			
 			</div>
 			<div class="footer">
 				<p class="text-footer">Póngase en contacto, nosotros le visitaremos para conocer sus necesidades y las condiciones del espacio de trabajo, de esa manera podemos ofrecerle un plan de trabajo óptimo y comenzar a trabajar en cuanto usted lo indique. <br/><br/><a href="contacto.html">¡CONTRÁTENOS HOY!</a></p>

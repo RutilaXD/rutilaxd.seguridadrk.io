@@ -16,12 +16,102 @@
 				margin-top: 1%;
 				margin-left: 25%;
 			}
+
+			.services{
+				height: 1400px;
+			}
+
+			.service {
+				width: 67%;
+    			height: 338px;
+			}
+
+			.service img {
+				width: 100%;
+    			height: 346px;
+			}
+
+			.grid {
+				margin-left: 25%;
+			}
 			
-			@media (max-width: 850px) {
+			.lista {
+				text-align: left; 
+				font-size: 30px;
+			}
+
+			.agregado p {
+				margin-left: 0;
+				font-size: 30px;
+			}
+
+			@media (max-width: 850px){
+
 				.agregado img {
 					display: none;
 				}
+
+				.text {
+					width: 100%;
+					background-image: url('../images/limpieza.jpg');
+					background-size: cover;
+				}
+
+				.text-description{
+					background-color: #5b7224;
+					opacity: 0.8;
+				}
+
+				.bigtitle {
+					color: #5b7224;
+				}
+
+				.service img {
+					width: 500px;
+					height: 300px;
+					margin-left: -32%;
+				}
+
+				.services {
+					height: 1100px;
+				}
+
+				.agregado p {
+					font-size: x-large;
+					margin-left: 20%;
+				}
 			}
+
+			@media (max-width: 400px) {
+				.service img {
+					width: 352px;
+					height: 153px;
+					margin-left: 0;
+				}
+
+				.grid {
+					margin-left: 0;
+				}
+
+				.services {
+					height: 530px;
+				}
+
+				#more {
+					height: 240px;
+				}
+
+				#more p {
+					font-size: medium;
+				    width: 70%;
+				    height: 18%;
+				    margin-left: 15%
+				}
+
+				.service {
+					height: 145px;
+				}
+			}			
 		</style>
 	</head>
 	<body>
@@ -37,7 +127,7 @@
 					<div class="li"><a href="../index.html">Inicio</a></div>
 					<div class="li"><a href="seguridad.html">Seguridad</a></div>
 					<div class="li"><a href="limpieza.html">Limpieza</a></div>
-					<div class="li">Mantenimiento</div>
+					<div class="li"><a href="mantenimiento.html">Mantenimiento</a></div>
 					<div class="li"><a href="contacto.html">Contacto</a></div>
 				</div>
 			</div>
@@ -80,19 +170,22 @@
 						<label>Obras<label>
 					</div>					
 				</div>
-				<div class="grid" style="margin: 7% 0 0 10%;">
+				<h2 class="title-services">Evidencias: </h2>
+				<div class="grid">
 					<div class="service">
-						<img src="../images/el.PNG">
+						<img src="../images/el.png">
 					</div>
+				</div>
+				<div class="grid">
 					<div class="service">
-						<img src="../images/el1.PNG">
+						<img src="../images/el1.png">
 					</div>
 				</div>				
 			</div>
-			<div class="description" style="background-color: #5b7224;">
+			<div class="description" id="more" style="background-color: #5b7224;">
 				<div class="agregado">
 					<h1>Además le ofrecemos por separado a la venta material consumible tal como:</h1>
-					<p style="text-align: left; font-size: 30px;">
+					<p id="lista">
 					 * Shampoo para manos <br/>
 					 * Aromatizante líquido <br/>
 					 * Toallas desinfectantes <br/>

@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../css/menu.css" media="screen"/>
 		<link rel="stylesheet" href="../css/contacto.css" media="screen"/>
 		<link rel="stylesheet" href="../css/footer.css" media="screen"/>
-		<script>document.oncontextmenu = function() {return false;}</script>		
+		<script>document.oncontextmenu = function() {return false;}</script>
 	</head>
 	<body>
 		<div class="body">
@@ -24,33 +24,35 @@
 					<div class="li"><a href="../index.html">Inicio</a></div>
 					<div class="li"><a href="seguridad.html">Seguridad</a></div>
 					<div class="li"><a href="limpieza.html">Limpieza</a></div>
-					<div class="li">Mantenimiento</div>
+					<div class="li"><a href="mantenimiento.html">Mantenimiento</a></div>
 					<div class="li"><a href="Contacto.html">Contacto</a></div>
 				</div>
 			</div>
 			<div class="description">
-				<h1 class="bigtitle">¡Contáctenos hoy!</h1>
+				<h1 class="bigtitle">¡Contrátenos hoy!</h1>
 			</div>
 			<div class="form">
 				<h2>Envíenos sus datos y un representante de Servicios y Seguridad Privada RK se pondrá en contacto con usted a la brevedad
 				<br><br>Los campos marcados con asterisco (*) son obligatorios</h2>
-				<form action="../index.html" method="post">
-					<label>Nombre*</label><br/><input type="text" placeholder="Ej. Mayra Lopez" required><br/>
-					<label>Empresa*</label><br/><input type="text" required><br/>
-					<label>Telefono</label><br/><input type="text" placeholder="Ej. 55 5657 5859" maxlength="12"><br/>
-					<label>Correo*</label><br/><input type="email" placeholder="Ej. alguien@ejemplo.com" required><br/>
+				<form name="envio" action="../envio/envio.php" method="post" enctype="application/x-www-form-urlencoded">
+					<label>Nombre*</label><br/><input type="text" name="nombre" placeholder="Ej. Mayra Lopez" required><br/>
+					<label>Empresa*</label><br/><input type="text" name="empresa" required><br/>
+					<label>Telefono</label><br/><input type="text" name="tel" placeholder="Ej. 55 5657 5859" maxlength="12"><br/>
+					<label>Correo*</label><br/><input type="email" name="mail" placeholder="Ej. alguien@ejemplo.com" required><br/>
 					<label>Servicio*</label><br/>
-					<select required>
+					<select name="servicios" required>
 						<option>Selecciona una opcion...</option>
 						<option>Guardia Industrial</option>
 						<option>Guardia Intramuros</option>
 						<option>Escolta</option>
 						<option>Limpieza</option>
 						<option>Mantenimiento</option>
+						<option>Paquetes de servicios</option>
 					</select><br/>
-					<label>Comentarios*</label><br/><textarea placeholder="Escribe algo..." required></textarea><br/>
-					<input type="submit" value="Enviar">
+					<label>Comentarios*</label><br/><textarea name="coment" placeholder="Escribe algo..." required></textarea><br/>
+					<input type="submit" name="ok" value="Enviar">
 				</form>
+				<script type="text/javascript">document.envio.reset(); </script>
 			</div>
 			<div class="footer">
 				<p class="text-footer">Póngase en contacto, nosotros le visitaremos para conocer sus necesidades y las condiciones del espacio de trabajo, de esa manera podemos ofrecerle un plan de trabajo óptimo y comenzar a trabajar en cuanto usted lo indique. <br/><br/>¡CONTRÁTENOS HOY!</p>
