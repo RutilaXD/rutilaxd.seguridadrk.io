@@ -15,3 +15,28 @@
 	margin-top: 4%;
 	margin-left: 10%;
 }
+
+.footer a:hover {
+	color: #d68835;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 825px) {
+	p {
+		height: 1%;
+	}	
+}
+
+@media (max-width: 400px){
+	.footer{
+		width: 100%;
+	}
+
+	p {
+		height: 1%;
+	}
+
+	.text-footer {
+		font-size: medium;
+	}
+}

@@ -55,6 +55,34 @@
 	}
 
 	.text-mision{
-		font-size: 25px;
+		margin-top: 25%;
+		font-size: 22px;
+	}
+
+	.mision {
+		height: 475px;
+	}
+
+	#agregado {
+		height: 520px;
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1920px){
+    .text-mision {
+        width: 50%;
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 400px){
+	.bigtitle {
+		font-size: 30px;
+	}
+	#agregado {
+		height: 620px;
+	}
+	.text-mision{
+		font-size: 19px;
 	}
 }

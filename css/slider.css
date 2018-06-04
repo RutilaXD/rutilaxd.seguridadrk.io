@@ -20,6 +20,12 @@ h1 {
 	text-align: center;
 }
 
+@media (min-width: 1400px) and (max-width: 1920px){
+    .container {
+        width: 80%;
+    }
+}
+
 .slider-wrapper {
     z-index: 500;
     position: relative;
@@ -192,14 +198,28 @@ h1 {
         height: 200px;
     }
 
-    .slider-wrapper .caption {
-        display: none;
-    }
 
 }
 
 @media only screen and (max-width: 410px) {
     .slider-wrapper {
         height: 160px;
+        width: -webkit-fill-available;
+    }
+
+    .slider-wrapper img {
+        width: -webkit-fill-available;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .slider-wrapper .caption {
+        width: 100%;
+    }
+
+    .slider-wrapper p {
+        width: 95%;
     }
 }

@@ -28,7 +28,9 @@
 	text-align: justify;
 	position: absolute;
 	margin-left: 10%;
-	margin-top: 3%;
+	margin-top: -1%;
+	padding: 15px;
+	border-radius: 10px;
 }
 
 .services {
@@ -81,9 +83,22 @@
     margin-right: 5%;
 }
 
-.service img {
-	width: 100%;
+.serv img{
+	width:288px;
+	height: 335px;
 	border-radius: 20px;
+}
+
+.service img {
+	width: 77%;
+    height: 175px;
+    /*background-color: red;*/
+    margin-right: 5%;
+}
+
+.serv {
+	margin-right: 5%;
+	
 }
 
 label {
@@ -140,4 +155,71 @@ label {
 	.agregado p {
 		font-size: large;
 	}
+
+	.title-services {
+		font-size: xx-large;
+	}
+
+	.text-description {
+		height: 50%;
+		font-size: large;
+	}	
+
+}
+
+@media (max-width: 400px){
+	.text-description {
+		width: 88%;
+		margin-left: 2%;
+	}
+	
+	#agre {
+		height: 310px;
+	}
+
+	.service {
+		height: 156px;
+	}
+
+	.agregado h1{
+		font-size: large;
+	}
+
+	.agregado p {
+		font-size: small;
+		width: 90%;
+		height: 30%;
+		margin-left: 6%;
+	}
+
+	.services {
+		height: 360px;
+	}
+
+	label {
+		font-size: xx-small;
+	}
+
+	.place {
+		margin-left: 6%;
+	}
+
+	.grid {
+		margin:auto;
+	}	
+
+	.service img {
+		width: 100%;
+	}
+
+	.title-services {
+		font-size: x-large;
+	}
+
+	.text-description {
+		height: 60%;
+		font-size: medium;
+	}
+
+
 }
